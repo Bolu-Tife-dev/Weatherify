@@ -1,0 +1,123 @@
+.hourly-forecast {
+    margin: 0;
+}
+
+.hourly-forecast h3 {
+    margin: 0 0 25px 0;
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+}
+
+.hourly-container {
+    overflow-x: auto;
+    padding: 10px 5px;
+}
+
+.hourly-list {
+    display: flex;
+    gap: 20px;
+    min-width: min-content;
+    padding: 10px 0;
+}
+
+.hourly-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 120px;
+    padding: 20px 15px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.hourly-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.hour-time {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.hour-icon {
+    width: 60px;
+    height: 60px;
+    margin: 10px 0;
+}
+
+.hour-temp {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: white;
+}
+
+.hour-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    width: 100%;
+}
+
+/* Scrollbar Styling */
+.hourly-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.hourly-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.hourly-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.hourly-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hourly-item {
+        min-width: 100px;
+        padding: 15px 10px;
+    }
+    
+    .hour-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .hour-temp {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hourly-item {
+        min-width: 90px;
+        padding: 12px 8px;
+    }
+    
+    .hour-time {
+        font-size: 1rem;
+    }
+    
+    .hour-icon {
+        width: 45px;
+        height: 45px;
+    }
+}
