@@ -2,7 +2,7 @@
 
 <br>
 
-<h3>This is a multi-responsive weather application that makes use of Open Weather API</h3>
+<h3>This is a multi-responsive weather application built with ReactJS and CSS that makes use of Open Weather API</h3>
 
 <br>
 
